@@ -15,27 +15,52 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button b = (Button) findViewById(R.id.button);
-        Button b2 = (Button) findViewById(R.id.button2);
-        Button b3 = (Button) findViewById(R.id.button3);
-        Button b4 = (Button) findViewById(R.id.button4);
-        Button b5 = (Button) findViewById(R.id.button5);
-        Button b6 = (Button) findViewById(R.id.button6);
         OnClickListener listener = new OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(getBaseContext(), "This button will launch Spotify Streamer!" , Toast.LENGTH_SHORT ).show();
-                Toast.makeText(getBaseContext(), "This button will launch Scores App!" , Toast.LENGTH_SHORT ).show();
-                Toast.makeText(getBaseContext(), "This button will launch Library App!" , Toast.LENGTH_SHORT ).show();
-                Toast.makeText(getBaseContext(), "This button will launch Build it Together!" , Toast.LENGTH_SHORT ).show();
-                Toast.makeText(getBaseContext(), "This button will launch Bacon Reader!" , Toast.LENGTH_SHORT ).show();
-                Toast.makeText(getBaseContext(), "This button will launch My Capstone App!" , Toast.LENGTH_SHORT ).show();
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "This button will launch Spotify Streamer!", Toast.LENGTH_SHORT).show();
             }
         };
         b.setOnClickListener(listener);
+        Button b2 = (Button) findViewById(R.id.button2);
+        listener = new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "This button will launch Scores App!", Toast.LENGTH_SHORT).show();
+            }
+        };
         b2.setOnClickListener(listener);
+        Button b3 = (Button) findViewById(R.id.button3);
+        listener = new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "This button will launch Library App!" , Toast.LENGTH_SHORT ).show();
+            }
+        };
         b3.setOnClickListener(listener);
+        Button b4 = (Button) findViewById(R.id.button4);
+        listener = new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "This button will launch Build it Bigger!" , Toast.LENGTH_SHORT ).show();
+            }
+        };
         b4.setOnClickListener(listener);
+        Button b5 = (Button) findViewById(R.id.button5);
+        listener = new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "This button will launch Bacon Reader!" , Toast.LENGTH_SHORT ).show();
+            }
+        };
         b5.setOnClickListener(listener);
+        Button b6 = (Button) findViewById(R.id.button6);
+        listener = new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getBaseContext(), "This button will launch My Capstone App!" , Toast.LENGTH_SHORT ).show();
+            }
+        };
         b6.setOnClickListener(listener);
     }
 
