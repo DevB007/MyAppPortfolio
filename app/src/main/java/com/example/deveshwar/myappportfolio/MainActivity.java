@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
         listener = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "This button will launch Bacon Reader!" , Toast.LENGTH_SHORT ).show();
+                Toast.makeText(getBaseContext(), "This button will launch XYZ Reader!" , Toast.LENGTH_SHORT ).show();
             }
         };
         b5.setOnClickListener(listener);
