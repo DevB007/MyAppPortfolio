@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.deveshwar.myappportfolio"
-        minSdkVersion 21
+        minSdkVersion
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
